@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>FB</title>
+		<link rel="stylesheet" href="fb.css"/>
+	</head>
+
+	<body>
+		<script src="fb.js"></script>
+
+		<div id="fb">
+
+			<h1>Why using Tinder, when your biggest fan is already your friend ? </h1>
+	
+			<div id="login-button">
+			<fb:login-button scope="public_profile,email,user_posts" onlogin="checkLoginState();">
+			</fb:login-button>
+			</div>
+
+			<div id="status">
+			</div>
+
+			<p>Nb of likes per friend on the <span id="nbPosts"></span> latest posts : </p>
+			<div id="order"></div>
+
+			<div
+				class="fb-like"
+				data-share="true"
+				data-width="450"
+				data-show-faces="true">
+			</div>
+
+		</div>
+		<script src="json2.js"></script>
+		<script src="jquery.js"></script>
+		<script src="underscore.js"></script>
+		<script src="backbone.js"></script>
+		<script src="backbone.localStorage.js"></script>
+
+
+
+	</body>
+</html>
